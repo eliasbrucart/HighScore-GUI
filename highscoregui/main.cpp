@@ -1,9 +1,13 @@
 #include <iostream>
+#include "Highscore.h"
 
 using namespace std;
 
-int main()
-{
+using namespace highscore;
 
-	return 0;
+Score list[10] = { 0,0,0,0,0,0,0,0,0,0 };
+
+void main()
+{
+	InitList(list);
 }
