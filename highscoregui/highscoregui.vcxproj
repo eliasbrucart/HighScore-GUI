@@ -104,10 +104,13 @@
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>C:\Users\Usuario\Desktop\ImageCampus\Cuatrimestre 3\Introduccion a la programacion de graficos\librerias\HighScore-GUI\libs\fltk_1.3.4-2_x86_msvc2015\include;C:\Users\Usuario\Desktop\ImageCampus\Cuatrimestre 3\Introduccion a la programacion de graficos\librerias\HighScore-GUI\libs\highscore;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>C:\Users\Usuario\Desktop\ImageCampus\Cuatrimestre 3\Introduccion a la programacion de graficos\librerias\HighScore-GUI\libs\fltk_1.3.4-2_x86_msvc2015\lib;C:\Users\Usuario\Desktop\ImageCampus\Cuatrimestre 3\Introduccion a la programacion de graficos\librerias\HighScore-GUI\libs\highscore;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>Highscore.lib;fltk.lib;fltkd.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
