@@ -76,11 +76,11 @@
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>C:\Users\Usuario\Desktop\ImageCampus\Cuatrimestre 3\Introduccion a la programacion de graficos\librerias\HighScore-GUI\libs\highscore\Debug;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\Usuario\Desktop\ImageCampus\Cuatrimestre 3\Introduccion a la programacion de graficos\librerias\HighScore-GUI\libs\highscore;C:\Users\Usuario\Desktop\ImageCampus\Cuatrimestre 3\Introduccion a la programacion de graficos\librerias\HighScore-GUI\libs\fltk_1.3.4-2_x86_msvc2015\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
-      <AdditionalLibraryDirectories>C:\Users\Usuario\Desktop\ImageCampus\Cuatrimestre 3\Introduccion a la programacion de graficos\librerias\HighScore-GUI\libs\highscore\Debug;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <AdditionalDependencies>Highscores.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:\Users\Usuario\Desktop\ImageCampus\Cuatrimestre 3\Introduccion a la programacion de graficos\librerias\HighScore-GUI\libs\highscore;C:\Users\Usuario\Desktop\ImageCampus\Cuatrimestre 3\Introduccion a la programacion de graficos\librerias\HighScore-GUI\libs\fltk_1.3.4-2_x86_msvc2015\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>Highscore.lib;fltk.lib;fltkd.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -129,12 +129,6 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="..\libs\highscore\Debug\Highscore.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <Library Include="..\libs\highscore\Debug\Highscores.lib" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
