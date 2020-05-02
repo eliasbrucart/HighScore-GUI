@@ -8,11 +8,16 @@ using namespace std;
 
 using namespace highscore;
 
-//Score list[10] = { 0,0,0,0,0,0,0,0,0,0 };
-
 int main(int argc, char **argv) {
-	Fl_Window *window = new Fl_Window(340, 180);
-	Fl_Box *box = new Fl_Box(20, 40, 300, 100, "Hello World");
+	Fl_Window *window = new Fl_Window(640, 360);
+	Fl_Box *box = new Fl_Box(0, 0, 640, 360, "Hola");
+	Score player[10];
+	for (int i = 0; i < 10; i++)
+	{
+		player[i].name = "elias";
+		player[i].score = 1;
+	}
+	InitList(player);
 	box->box(FL_UP_BOX);
 	box->labelfont(FL_BOLD + FL_ITALIC);
 	box->labelsize(36);
