@@ -2,16 +2,16 @@
 #include "Highscore.h"
 #include "FL/Fl.H"
 #include "FL/Fl_Window.H"
+#include "FL/Fl_Widget.H"
 #include "FL/Fl_Box.H"
-#include "FL/Fl_draw.H"
 
 using namespace std;
 
 using namespace highscore;
 
 int main(int argc, char **argv) {
-	Fl_Window *window = new Fl_Window(640, 360);
-	Fl_Box *box = new Fl_Box(0, 0, 640, 360, "Hola");
+	Fl_Window *window = new Fl_Window(640, 365);
+	Fl_Box *box = new Fl_Box(0, 0, 320, 180, "HighScores");
 	Score player[10];
 	player[0].name = "Elias";
 	player[0].score = 53;
@@ -41,8 +41,17 @@ int main(int argc, char **argv) {
 	GetHighestScore(player);
 	box->box(FL_UP_BOX);
 	box->labelfont(FL_BOLD + FL_ITALIC);
+	box->color(FL_RED);
 	box->labelsize(36);
 	box->labeltype(FL_SHADOW_LABEL);
+
+	Fl_Box *box2 = new Fl_Box(0, 181, 320, 180, "Player List");
+	box2->box(FL_UP_BOX);
+	box2->labelfont(FL_BOLD + FL_ITALIC);
+	box2->color(FL_YELLOW);
+	box2->labelsize(36);
+	box2->labeltype(FL_SHADOW_LABEL);
+
 	window->end();
 	window->show(argc, argv);
 	return Fl::run();
